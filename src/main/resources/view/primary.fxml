@@ -8,7 +8,6 @@
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
-<?import javafx.scene.text.TextFlow?>
 
 <AnchorPane prefHeight="370.0" prefWidth="611.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.mavenproject1.PrimaryController">
    <children>
@@ -27,22 +26,19 @@
                   <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                </rowConstraints>
                <children>
-                  <Button fx:id="b_docx" onAction="#openDialogDocx" text="Browse..." GridPane.columnIndex="2" />
-                  <TextField fx:id="tf_docx" minWidth="-Infinity" GridPane.columnIndex="1" />
-                  <Button fx:id="b_pdf" mnemonicParsing="false" onAction="#openDialogPdf" text="Browse..." GridPane.columnIndex="2" GridPane.rowIndex="1" />
-                  <TextField fx:id="tf_pdf" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-                  <Button fx:id="b_fonts" mnemonicParsing="false" onAction="#openDialogFonts" text="Browse..." GridPane.columnIndex="2" GridPane.rowIndex="2" />
-                  <TextField fx:id="tf_fonts" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <Button fx:id="bDocx" onAction="#openDialogDocx" text="Browse..." GridPane.columnIndex="2" />
+                  <TextField fx:id="tfDocx" minWidth="-Infinity" GridPane.columnIndex="1" />
+                  <Button fx:id="bPdf" mnemonicParsing="false" onAction="#openDialogPdf" text="Browse..." GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                  <TextField fx:id="tfPdf" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <Button fx:id="bFonts" mnemonicParsing="false" onAction="#openDialogFonts" text="Browse..." GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                  <TextField fx:id="tfFonts" GridPane.columnIndex="1" GridPane.rowIndex="2" />
                   <Label text="Docx:" />
                   <Label text="PDF:" GridPane.rowIndex="1" />
                   <Label text="Fonts folder:" GridPane.rowIndex="2" />
-                  <Button mnemonicParsing="false" text="Generate PDF" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
+                  <Button fx:id="bGenerate" mnemonicParsing="false" onAction="#generate" text="Generate PDF" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
                </children>
             </GridPane>
          </center>
-         <bottom>
-            <TextFlow prefHeight="200.0" prefWidth="461.0" BorderPane.alignment="CENTER" />
-         </bottom>
       </BorderPane>
    </children>
 </AnchorPane>
