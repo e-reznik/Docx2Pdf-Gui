@@ -20,7 +20,7 @@
         <dependency>
             <groupId>org.openjfx</groupId>
             <artifactId>javafx-fxml</artifactId>
-            <version>16</version>
+            <version>17</version>
         </dependency>
            
         <!-- Docx2Pdf -->
